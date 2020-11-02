@@ -1,5 +1,5 @@
 {
-  "extends": "../../tsconfig.json",
+  "extends": "./.storybook-tsconfig.json",
   "compilerOptions": {
     "rootDir": ".",
     "types": ["webpack-env"],
