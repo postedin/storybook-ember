@@ -42,6 +42,7 @@
     "@babel/core": "*",
     "babel-plugin-ember-modules-api-polyfill": "^2.12.0",
     "babel-plugin-htmlbars-inline-precompile": "2 || 3",
+    "ember-named-blocks-polyfill": "*",
     "ember-source": "^3.16.0",
     "react": "*",
     "react-dom": "*"

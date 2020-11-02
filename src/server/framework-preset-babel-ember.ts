@@ -1,8 +1,11 @@
-import { precompile } from 'ember-source/dist/ember-template-compiler';
+import { precompile, registerPlugin } from 'ember-source/dist/ember-template-compiler';
+import NamedBlocksPolyfillPlugin from 'ember-named-blocks-polyfill/lib/named-blocks-polyfill-plugin';
 import { Configuration } from 'webpack'; // eslint-disable-line
 
 export function babel(config: Configuration) {
   const babelConfigPlugins = config.plugins || [];
+
+  registerPlugin('ast', NamedBlocksPolyfillPlugin);
 
   const extraPlugins = [
     [
